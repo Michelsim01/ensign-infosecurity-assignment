@@ -1,4 +1,4 @@
-# Ensign Assignment
+# Ensign Infosecurity Assignment
 
 This repository contains two assignments:
 
