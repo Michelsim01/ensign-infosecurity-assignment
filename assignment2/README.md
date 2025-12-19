@@ -12,7 +12,7 @@ A modern, responsive e-commerce shopping cart application built with React. Brow
 - **Modern UI**: Clean, modern interface built with Tailwind CSS
 - **Fast Performance**: Built with Vite for lightning-fast development and optimized builds
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
 
@@ -144,7 +144,7 @@ ensign-shopping-cart/
 - `/product/:id` - Product detail page for a specific product
 - `/cart` - Shopping cart page
 
-## 🎨 Technologies Used
+## Technologies Used
 
 - **React 19.2.0** - UI library
 - **Vite 7.2.4** - Build tool and development server
