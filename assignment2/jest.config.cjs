@@ -1,0 +1,9 @@
+module.exports = {
+    testEnvironment: 'jsdom',
+    setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+    moduleNameMapper: {
+      // This handles CSS/Image imports which Jest doesn't understand
+      '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+      '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/__mocks__/fileMock.js',
+    },
+  };

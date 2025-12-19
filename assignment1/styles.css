@@ -1,0 +1,189 @@
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Light grey background for the app container/body */
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.app-container {
+    padding: 0 0 40px 0; /* Padding at the bottom */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 1px;                
+    height: 35px;              
+    background-color: #e0e0e0; 
+    margin: 5px;            
+}
+
+.apple-logo {
+    height: 50px;     
+    width: auto;       
+    margin-right: 20px; /* Space between logo and search bar */
+    display: block;    /* Removes any extra space at the bottom of the image */
+}
+
+.search-icon-img {
+    height: 25px;       
+    width: auto;
+    margin-right: 10px; 
+    margin-left: 10px;
+    opacity: 0.9;       
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Ensures icon and text stay perfectly level */
+}
+
+.search-bar input {
+    border: none;           
+    outline: none;          
+    background: transparent; 
+    font-size: 16px;
+    color: #333;
+    width: 250px;
+}
+
+.search-bar input::placeholder {
+    color: #b0b0b0;  /* Make the placeholder text even more faint */
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;     /* Makes the image a circle */
+    object-fit: cover;      /* Ensures the photo isn't squished or stretched */
+    border: 1px solid #ddd; 
+    display: block;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;              /* Space between the photo and the name */
+}
+
+.user-profile span {
+    font-size: 14px;
+    font-weight: 500;       
+    color: #333;
+}
+
+/* --- Kanban Board Layout --- */
+
+.kanban-board-container {
+    /* Use CSS Grid for the three-column layout */
+    display: grid;
+    /* Create 3 equally sized columns (1fr each) */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* Space between columns */
+    padding: 40px 70px;
+}
+
+.column-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.kanban-column {
+    /* Columns take up the full available vertical space */
+    min-height: 500px;
+}
+
+/* Task Card Styling */
+.task-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    /* subtle shadow to lift the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 15px;
+    overflow: hidden;  /* Ensures the text doesn't make the card different heights */
+    display: -webkit-box;  /* create a multi-line text truncation effect */
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+}
+
+/* Card Footer Layout */
+.card-footer {
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center;
+    padding-top: 10px; /* Space above footer */
+}
+
+.card-avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%; /* This makes it a circle */
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Avatar Colours */
+.oz { background-color: #3498db; } 
+.am { background-color: #9E37DE; } 
+.le { background-color: #CD37DE; } 
+.me { background-color: #00d2d3; } 
+
+.card-date {
+    font-size: 12px;
+    color: #999;
+}
+
+.red-text {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.green-text {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+.purple-text {
+    color: #A41EC9;
+    font-weight: 500;
+}

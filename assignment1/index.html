@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="navbar-left">
+                <img src="Apple_logo.png" alt="Apple Logo" class="apple-logo">
+                
+                <div class="divider"></div>
+        
+                <div class="search-bar">
+                    <img src="Search_icon.png" alt="Search" class="search-icon-img">
+                    <input type="text" placeholder="Search for ..">
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <img src="Analyst_user.avif" alt="Analyst User" class="user-avatar">
+                <span>Analyst User</span>
+            </div>
+            </header>
+
+        <!-- Kanban Board -->
+        <main class="kanban-board-container">
+
+            <!-- Backlog column -->
+            <section class="kanban-column">
+                <h2 class="column-title">Backlog</h2>
+
+                <!-- Task card 1 -->
+                <article class="task-card">
+                    <h3 class="card-title">Nulla volutpat aliquam velit</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar oz">OZ</span>
+                    </div>
+                </article>
+
+                <!-- Task card 2 -->
+                <article class="task-card">
+                    <h3 class="card-title">Facilisis in pretium nisl aliquet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar le">LE</span>
+                        <span class="card-date red-text">Two days ago</span>
+                    </div>
+                </article>
+
+                <!-- Task card 3 -->
+                <article class="task-card">
+                    <h3 class="card-title">Eget porttitor lorem</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar me">ME</span>
+                    </div>
+                </article>
+            </section>
+
+            <section class="kanban-column">
+                <h2 class="column-title">Todo</h2>
+
+                <article class="task-card">
+                    <h3 class="card-title">Eget porttitor lorem</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar am">AM</span>
+                        <span class="card-date purple-text">Today</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3 class="card-title">Consectetur adipiscing elit</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar oz">OZ</span>
+                        <span class="card-date green-text">In three days</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3 class="card-title">Nulla volutpat aliquam velit</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar le">LE</span>
+                        <span class="card-date green-text">July 21</span>
+                    </div>
+                </article>
+            </section>
+
+            <section class="kanban-column">
+                <h2 class="column-title">Done</h2>
+
+                <article class="task-card">
+                    <h3 class="card-title">Ac tristique libero volutpat at</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar le">LE</span>
+                        <span class="card-date">A week ago</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3 class="card-title">Phasellus iaculis neque</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar oz">OZ</span>
+                        <span class="card-date">Last Tuesday</span>
+                    </div>
+                </article>
+
+                <article class="task-card">
+                    <h3 class="card-title">Facilisis in pretium nisl aliquet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat ar ..</p>
+                    <div class="card-footer">
+                        <span class="card-avatar am">AM</span>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>
